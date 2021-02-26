@@ -1,0 +1,261 @@
+.App {
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  background-color: rgb(0, 0, 77);
+}
+
+.home-view__heading {
+  font-size: 40px;
+  display: block;
+  margin-top: 0;
+  padding: 30px;
+  margin-left: 30px;
+  margin-right: auto;
+  width: 20%;
+}
+
+.home-view__heading-image {
+  display: block;
+  margin-top: 20px;
+  padding: 30px;
+  margin-right: 70px;
+  width: 15%;
+}
+
+.home-view__heading-WHO {
+  margin-top: 50px;
+  width: 70px;
+  color: rgb(252, 252, 90);
+}
+
+.home-view__first-column {
+  font-size: 10px;
+  margin-right: 20px;
+  left: 0;
+}
+
+h2.home-view__first-column {
+  font-size: 30px;
+}
+
+.home-view__column {
+  margin-right: 20px;
+  font-size: 10px;
+}
+
+.home-view__total-count {
+  color: rgb(196, 94, 94);
+}
+
+.home-view__heading-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-view__container {
+  display: flex;
+  width: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border: solid darkred 4px;
+  border-radius: 10px 10px;
+  background-color: rgb(0, 0, 51, 0.95);
+  font-family: Helvetica, sans-serif;
+  height: auto;
+  padding: 15px;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.home-view__total-row {
+  display: flex;
+  margin-left: 40px;
+}
+
+.home-view__total-container {
+  border: solid whitesmoke 2px;
+  background-color: rgb(0, 0, 51, 0.95);
+  border-radius: 10px 10px;
+  display: block;
+  margin-right: 20px;
+  width: 190px;
+  height: auto;
+}
+
+.home-view__total-new-container {
+  border: solid lightyellow 2px;
+  background-color: rgb(0, 0, 51, 0.95);
+  border-radius: 10px 10px;
+  display: block;
+  margin-left: 150px;
+  margin-right: 20px;
+  width: 180px;
+  height: auto;
+}
+
+h3.total__info {
+  margin-top: 0;
+  text-align: center !important;
+}
+
+p.total__info {
+  margin-block-start: 15px;
+  margin-block-end: 20px;
+  font-size: 14px;
+  text-align: center !important;
+}
+
+.total__div-image {
+  height: 40px;
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.home-view__data {
+  font-size: 14px;
+  color: white;
+}
+
+.cases-table__row {
+  display: flex;
+  text-align: left;
+}
+
+.cases-table__column-heading {
+  width: 120px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cases-table__column-country,
+a {
+  font-size: 18px;
+  text-decoration: none;
+  width: 120px;
+  height: 50px;
+  margin-left: 3px;
+  color: white;
+}
+
+.cases-table__column-cases {
+  font-size: 18px;
+  width: 120px;
+  height: 50px;
+  margin-left: 10px;
+  color: lightcoral;
+}
+
+.cases-table__column-deceased {
+  font-size: 18px;
+  width: 120px;
+  height: 50px;
+  color: red;
+}
+
+.cases-table__column-recovered {
+  font-size: 18px;
+  width: 120px;
+  height: 50px;
+  color: green;
+}
+
+.cases-table__column-critical {
+  font-size: 18px;
+  width: 120px;
+  height: 50px;
+  margin-left: 0px;
+  color: orange;
+}
+
+.cases-table__column-newCases {
+  font-size: 18px;
+  width: 120px;
+  height: 50px;
+  color: lightblue;
+}
+
+.home-view__news-column {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.home-view__news-item {
+  width: 400px;
+  height: 250px;
+  background-color: rgb(0, 0, 51, 0.95);
+  margin-top: 44px;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 5px 5px;
+}
+
+.container__stats-and-news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-column__heading {
+  margin-right: 40px;
+  color: rgb(241, 241, 88);
+  margin-top: 40px;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.news-column__article-heading {
+  margin: 15px;
+  color: lightyellow;
+}
+
+.news-column__article-link {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.news-column__article-image {
+  height: auto;
+  width: 220px;
+  display: block;
+  margin-left: 0;
+}
+
+.news-column__article-text {
+  position: absolute;
+  font-size: 14px;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(0, 0, 51, 0.5);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sort-button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  margin-left: -7px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+
+.sort-button__svg {
+  width: 10px;
+  height: 10px;
+  margin-top: 4px;
+  margin-left: 7px;
+}
