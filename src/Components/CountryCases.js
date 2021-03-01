@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const CountryCases = props => {
+const CountryCases = (props) => {
   return (
     <div className="container">
       <table>
@@ -95,7 +95,7 @@ const CountryCases = props => {
                   <Link
                     to={{
                       pathname: `/country/${stat[1].country}`,
-                      state: { stat }
+                      state: { country: stat[1].country, cases: stat[1].cases }
                     }}
                   >
                     {stat[1].country}
