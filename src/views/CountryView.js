@@ -3,35 +3,25 @@ import Country from "../Components/Country";
 import NewsColumn from "../Components/NewsColumn";
 import { Cases } from "../State/use-backend";
 
-const HomeView = stat => {
-  const [data] = Cases({});
-  // const [data, setData] = useState({});
-  // const [error, setError] = useState(null);
-  // const [isLoading, setIsLoading] = useState(true);
-
-  // // Fetch user data when the username change
-  // const { data, isLoading } = Cases();
-  //  const [stats, setStats] = useState(data);
-
-  const selected = [...data].filter(selection => {
-    return selection.country === stat;
-  });
-  console.log(selected);
-
-  const createBody = () => {
-    if (isLoading) {
-      return "Loading";
-    } else {
-      return <Country stats={selected} />;
-    }
+class CountryView extends React.Component {
+  state = {
+    stat: null
   };
 
-  return (
-    <div className="home-view__container">
-      {createBody}
-      <NewsColumn />
-    </div>
-  );
-};
+  componentDidMount() {
+    const { country } = this.props.match.params;
+    const { stat } = this.props.location.state;
 
-export default HomeView;
+    fetch(`https://corona.lmao.ninja/v3/covid-19/countries/${country}`).then(
+      (stat) => {
+        this.setState(() => ({ stat }));
+      }
+    );
+  }
+
+  render() {
+    return <Country props={stat} />;
+  }
+}
+
+export default CountryView;
